@@ -29,7 +29,7 @@ module.exports = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 				
 				<table border="1" cellspacing="0">
                     <tr>
-                        <th>ID</th>
+                        <th>Id</th>
 						<th>בניין</th>
 						<th>קומה</th>
 						<th>מס דירה</th>

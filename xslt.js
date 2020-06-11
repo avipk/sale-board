@@ -51,6 +51,7 @@ module.exports = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 						<th>סטטוס</th>						
 						<th>סטטוס מכירה</th>
 						<th>תאריך בחירת דירה</th>
+						<th>תאריך חתימת חוזה</th>
 					</tr>		
 					<xsl:for-each select="list/properties/property">
 						<xsl:sort select="@BuildingTitle" data-type="number"/>
@@ -83,6 +84,7 @@ module.exports = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 			<td><xsl:value-of select="@PStatus"/></td>
 			<td><xsl:call-template name="propery-status-translate"/></td>
 			<td><xsl:value-of select="@AgreementDate"/></td>
+			<td><xsl:value-of select="@ContractDate"/></td>
 		</tr>	
 	</xsl:template>
 	
